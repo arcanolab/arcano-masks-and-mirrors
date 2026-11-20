@@ -1,0 +1,37 @@
+{
+  "id": "arcano-formas",
+  "title": "Arcano Masks & Mirrors",
+  "description": "Arcano Masks & Mirrors, by Arcano Lab: switch a token between saved looks (image, portrait, size and scale) without swapping the actor. Token HUD button, animated transition, original form always recoverable. English and Português (Brasil).",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Arcano Lab",
+      "url": "https://www.patreon.com/arcanolab"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/formas.css"
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "https://github.com/arcanolab/arcano-masks-and-mirrors",
+  "manifest": "https://github.com/arcanolab/arcano-masks-and-mirrors/releases/latest/download/module.json",
+  "download": "https://github.com/arcanolab/arcano-masks-and-mirrors/releases/download/v1.0.0/masks-and-mirrors.zip"
+}

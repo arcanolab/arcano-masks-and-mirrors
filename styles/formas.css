@@ -1,0 +1,195 @@
+/* Masks & Mirrors (Arcano Lab) — HUD do token, janela das formas e assinatura */
+#token-hud,
+.aformas {
+  --af-roxo: #7b55d6;
+  --af-ouro: #d9b45a;
+  --af-fundo: #1d1a24;
+}
+
+/* ---------- HUD ---------- */
+#token-hud button.aformas.active,
+#token-hud button.aformas:hover {
+  color: var(--af-ouro);
+  border-color: var(--af-ouro);
+}
+#token-hud .aformas-paleta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px;
+  top: 0;
+  width: max-content;
+  max-width: 264px; /* quatro miniaturas por linha */
+  background: linear-gradient(135deg, rgba(123, 85, 214, 0.28), rgba(21, 16, 33, 0.92));
+  border: 1px solid rgba(217, 180, 90, 0.55);
+}
+#token-hud .aformas-item {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: var(--af-fundo);
+  color: #bbb;
+  cursor: var(--cursor-pointer);
+}
+#token-hud .aformas-item:hover {
+  border-color: var(--af-ouro);
+  color: var(--af-ouro);
+}
+#token-hud .aformas-item.ativa {
+  border-color: var(--af-roxo);
+  box-shadow: 0 0 0 2px rgba(123, 85, 214, 0.35);
+}
+#token-hud .aformas-mini {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+  pointer-events: none;
+}
+#token-hud .aformas-cfg {
+  font-size: 20px;
+}
+
+/* ---------- Editor ---------- */
+.aformas-editor .aformas-corpo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aformas-editor .aformas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.aformas-editor legend {
+  color: var(--af-ouro);
+}
+.aformas-editor .aformas-linha {
+  display: grid;
+  grid-template-columns: 96px 1fr 32px;
+  gap: 12px;
+  align-items: start;
+  margin: 0;
+  padding: 10px;
+}
+.aformas-editor .aformas-previa {
+  width: 96px;
+  height: 96px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background: var(--af-fundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.aformas-editor .aformas-linha:hover .aformas-previa {
+  border-color: var(--af-ouro);
+}
+.aformas-editor .aformas-mini {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+}
+.aformas-editor .aformas-campos {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.aformas-editor .aformas-medidas .form-fields {
+  flex-wrap: nowrap;
+}
+.aformas-editor .aformas-medidas .form-fields span {
+  flex: 0 0 auto;
+}
+.aformas-editor .aformas-remover {
+  width: 32px;
+  height: 32px;
+}
+.aformas-editor .aformas-vazio {
+  text-align: center;
+  opacity: 0.7;
+  margin: 12px 0;
+}
+
+/* ---------- Assinatura Arcano Lab + link do Patreon ---------- */
+.aformas .aformas-assinatura {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  border: 1px dashed rgba(217, 180, 90, 0.45);
+  border-radius: 6px;
+  background: linear-gradient(135deg, rgba(123, 85, 214, 0.18), rgba(21, 16, 33, 0.35));
+}
+.aformas .aformas-marca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.15;
+}
+.aformas .aformas-marca > img {
+  width: 36px;
+  height: 36px;
+  flex: none;
+  border: none;
+}
+.aformas .aformas-marca strong {
+  display: block;
+  color: var(--af-ouro);
+  letter-spacing: 0.04em;
+}
+.aformas .aformas-marca span {
+  display: block;
+  font-size: 11px;
+  opacity: 0.85;
+}
+.aformas .aformas-marca em {
+  display: block;
+  font-size: 11px;
+  opacity: 0.7;
+}
+.aformas.aformas-cfg-assinatura {
+  margin-top: 12px;
+}
+.aformas .aformas-patreon {
+  flex: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: var(--af-roxo);
+  color: #fff;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.aformas .aformas-patreon:hover {
+  background: #8f6ae6;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: 0 0 6px rgba(217, 180, 90, 0.6);
+}
+
+/* ---------- Ícone próprio (máscara e reflexo) ---------- */
+.aformas-icone {
+  display: inline-block;
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: -0.2em;
+  background-color: currentColor;
+  -webkit-mask: url("../assets/masks-mirrors.svg") center / contain no-repeat;
+  mask: url("../assets/masks-mirrors.svg") center / contain no-repeat;
+}
+#token-hud button.aformas .aformas-icone {
+  width: 1.5em;
+  height: 1.5em;
+}

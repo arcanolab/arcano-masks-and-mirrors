@@ -1,0 +1,69 @@
+{
+  "AFORMAS": {
+    "Botao": "Change form",
+    "Original": "Original form",
+    "Configurar": "Configure forms",
+    "TituloEditor": "Arcano Masks & Mirrors — {nome}",
+    "Nome": "Name",
+    "NomePadrao": "New form",
+    "Imagem": "Token image",
+    "Retrato": "Portrait (optional)",
+    "Largura": "Width",
+    "Altura": "Height",
+    "Escala": "Scale",
+    "Manter": "same",
+    "Adicionar": "Add form",
+    "Remover": "Remove",
+    "Salvar": "Save",
+    "Vazio": "No forms yet. Add the first one.",
+    "DicaTamanho": "Blank width, height and scale stay the same as the original form.",
+    "Aviso": {
+      "SemPermissao": "You do not own this token.",
+      "SemAtor": "This token has no actor.",
+      "FormaNaoExiste": "Form not found: {forma}",
+      "ImagemNaoCarrega": "The image of form \"{forma}\" failed to load: {img}",
+      "SemImagem": "Form \"{forma}\" has no image and was not saved.",
+      "SemFormas": "{nome} has no forms configured."
+    },
+    "Idioma": {
+      "auto": "Follow Foundry"
+    },
+    "Config": {
+      "ShiftClique": "Shift + click changes form",
+      "ShiftCliqueDica": "Hold Shift and click one of your tokens to move to the next form (after the last one, back to the original). Only applies to tokens with forms; on others Shift still adds to the selection.",
+      "Idioma": "Module language",
+      "IdiomaDica": "Language used by this module's windows, messages and settings. \"Follow Foundry\" uses the same language as Foundry. Reloads the page.",
+      "Transicao": "Transition",
+      "TransicaoDica": "Effect used when the token changes form.",
+      "Duracao": "Transition duration (ms)",
+      "JogadorConfigura": "Players configure their own forms",
+      "JogadorConfiguraDica": "If off, players can only switch between forms created by the GM."
+    },
+    "Transicao": {
+      "nenhuma": "No animation",
+      "fade": "Fade",
+      "swirl": "Swirl",
+      "waterDrop": "Water drop",
+      "morph": "Morph",
+      "crosshatch": "Crosshatch",
+      "wind": "Wind",
+      "waves": "Waves",
+      "whiteNoise": "White noise",
+      "hologram": "Hologram",
+      "hole": "Hole",
+      "holeSwirl": "Hole swirl",
+      "glitch": "Glitch",
+      "dots": "Dots"
+    },
+    "Tecla": {
+      "Proxima": "Next form",
+      "ProximaDica": "Moves the selected tokens to their next form.",
+      "Original": "Back to original form"
+    },
+    "Assinatura": {
+      "tagline": "New Foundry modules every month.",
+      "cta": "Support on Patreon",
+      "by": "by Arcano Lab"
+    }
+  }
+}

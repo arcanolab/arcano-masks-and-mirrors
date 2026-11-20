@@ -1,0 +1,69 @@
+{
+  "AFORMAS": {
+    "Botao": "Trocar forma",
+    "Original": "Forma original",
+    "Configurar": "Configurar formas",
+    "TituloEditor": "Arcano Masks & Mirrors — {nome}",
+    "Nome": "Nome",
+    "NomePadrao": "Nova forma",
+    "Imagem": "Imagem do token",
+    "Retrato": "Retrato (opcional)",
+    "Largura": "Largura",
+    "Altura": "Altura",
+    "Escala": "Escala",
+    "Manter": "igual",
+    "Adicionar": "Adicionar forma",
+    "Remover": "Remover",
+    "Salvar": "Salvar",
+    "Vazio": "Nenhuma forma ainda. Adicione a primeira.",
+    "DicaTamanho": "Largura, altura e escala em branco ficam iguais às da forma original.",
+    "Aviso": {
+      "SemPermissao": "Você não é dono deste token.",
+      "SemAtor": "Este token não tem personagem.",
+      "FormaNaoExiste": "Forma não encontrada: {forma}",
+      "ImagemNaoCarrega": "A imagem da forma \"{forma}\" não carregou: {img}",
+      "SemImagem": "A forma \"{forma}\" está sem imagem e não foi salva.",
+      "SemFormas": "{nome} não tem formas configuradas."
+    },
+    "Idioma": {
+      "auto": "Seguir o Foundry"
+    },
+    "Config": {
+      "ShiftClique": "Shift + clique troca de forma",
+      "ShiftCliqueDica": "Segurar Shift e clicar num token seu passa para a próxima forma (depois da última, volta à original). Só vale para tokens com formas; nos outros o Shift continua somando à seleção.",
+      "Idioma": "Idioma do módulo",
+      "IdiomaDica": "Idioma das janelas, mensagens e configurações deste módulo. \"Seguir o Foundry\" usa o mesmo idioma do Foundry. Recarrega a página.",
+      "Transicao": "Transição",
+      "TransicaoDica": "Efeito usado quando o token muda de forma.",
+      "Duracao": "Duração da transição (ms)",
+      "JogadorConfigura": "Jogadores configuram as próprias formas",
+      "JogadorConfiguraDica": "Se desligado, os jogadores só trocam entre as formas que o mestre criou."
+    },
+    "Transicao": {
+      "nenhuma": "Sem animação",
+      "fade": "Esmaecer",
+      "swirl": "Redemoinho",
+      "waterDrop": "Gota d'água",
+      "morph": "Metamorfose",
+      "crosshatch": "Hachura",
+      "wind": "Vento",
+      "waves": "Ondas",
+      "whiteNoise": "Chuvisco",
+      "hologram": "Holograma",
+      "hole": "Buraco",
+      "holeSwirl": "Buraco em espiral",
+      "glitch": "Falha",
+      "dots": "Pontos"
+    },
+    "Tecla": {
+      "Proxima": "Próxima forma",
+      "ProximaDica": "Passa os tokens selecionados para a próxima forma.",
+      "Original": "Voltar à forma original"
+    },
+    "Assinatura": {
+      "tagline": "Módulos novos para Foundry todo mês.",
+      "cta": "Apoie no Patreon",
+      "by": "por Arcano Lab"
+    }
+  }
+}
